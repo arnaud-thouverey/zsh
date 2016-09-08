@@ -10,8 +10,8 @@ setopt histignorealldups sharehistory
 bindkey -e
 
 # Keep 1000 lines of history within the shell and save it to ~/.zsh_history:
-HISTSIZE=1000
-SAVEHIST=1000
+HISTSIZE=10000
+SAVEHIST=10000
 HISTFILE=~/.zsh_history
 
 # Use modern completion system
@@ -36,6 +36,6 @@ zstyle ':completion:*' verbose true
 zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
-
+alias ls='ls --color=auto'
 alias ll='ls -la'
 alias c='cd ..'
