@@ -3,7 +3,8 @@
 autoload -Uz promptinit
 promptinit
 prompt suse 
-PROMPT='%B%F{magenta}%n@%M %F{yellow}%~>%f '
+source ~/zsh-git-prompt/zshrc.sh
+PROMPT='%B%F{magenta}%n@%M %b$(git_super_status)%F{yellow}%~>%f '
 RPROMPT='%D{%d-%m-%Y} %*'
 
 setopt histignorealldups sharehistory
@@ -55,7 +56,7 @@ bindkey "^[[1;3A" up-line-or-search
 bindkey "^[[1;3B" down-line-or-search
 
 
-export PATH=/home/athouverey/spark-2.1.0-bin-hadoop2.7/bin:$PATH
+export PATH=/home/athouverey/spark-2.1.2-bin-hadoop2.7/bin:$PATH
 export PATH=/home/athouverey/sbt/bin:$PATH
 
 

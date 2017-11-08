@@ -19,7 +19,6 @@ set nocompatible
 " Attempt to determine the type of a file based on its name and possibly its
 " contents. Use this to allow intelligent auto-indenting for each filetype,
 " and for plugins that are filetype specific.
-" filetype indent plugin on
 filetype off
  
 " set the runtime path to include Vundle and initialize
@@ -37,6 +36,7 @@ Plugin 'derekwyatt/vim-scala'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
+filetype indent plugin on
 
 " Enable syntax highlighting
 syntax on
